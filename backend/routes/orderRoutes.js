@@ -46,7 +46,7 @@ router.put('/confirm', async (req, res) => {
 
     if (role === 'customer') {
       order.customerConfirmed = true; // Confirmation from the customer
-    } else if role is 'runner') {
+    } else if (role === 'runner') {
       order.runnerConfirmed = true; // Confirmation from the runner
     }
 

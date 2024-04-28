@@ -7,7 +7,7 @@ function RunnerJoin() {
 
   const joinAsRunner = async () => {
     try {
-      const response = await axios.post('/api/runner/join', { email, city });
+      const response = await axios.post('http://localhost:4000/api/runners', { email, city });
       if (response.status === 200) {
         console.log('Joined as runner successfully');
         // Redirect to thank-you page or display success message
